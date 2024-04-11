@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/suggerimento_shrek"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvDomanda"
+        android:text="Vuoi veramente vedere il suggerimento?"
+        android:textSize="@dimen/textsize_big"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/llPulsanti"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_weight="3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        >
+
+    <LinearLayout
+        android:id="@+id/llPulsanti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="siClicked"
+            android:text="SI"
+            android:textSize="@dimen/textsize_big"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_button"
+            android:backgroundTint="@color/red"
+            />
+
+        <Button
+            android:id="@+id/noButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="noClicked"
+            android:text="NO"
+            android:textSize="@dimen/textsize_big"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_button"
+            android:backgroundTint="@color/brown"
+            />
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="noClicked"
+            android:text="Torna alla Domanda"
+            android:textSize="@dimen/textsize_big"
+            android:layout_margin="@dimen/margin_button"
+            android:textColor="@color/brown"
+            android:backgroundTint="@color/greenOrc"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRisposta"
+        android:text=". . . ."
+        android:textSize="@dimen/textsize_big"
+        android:textColor="@color/white"
+        android:background="@color/brown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+
+    </LinearLayout>
+
+</FrameLayout>

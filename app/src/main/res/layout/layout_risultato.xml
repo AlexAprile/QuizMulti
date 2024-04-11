@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgRisultato"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/suggerimento_shrek"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:id="@+id/llPunti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvRisposteCorrette"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risposte Corrette: "
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_big"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tvRisposteNonValide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risposte Corette Non Valide: "
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_big"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tvRisposteErrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Risposte da Ciuchino: "
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_big"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/tvDomandeTotali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Domande Totali: "
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_big"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:text="Torna al Quiz"
+            android:textSize="@dimen/textsize_big"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_green"
+            android:onClick="homeClicked"
+            />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
